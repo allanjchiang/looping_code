@@ -14,7 +14,10 @@
         while (i < people.length) {
             if (people[i] === 'Phil' || people[i] === 'Lola') {
                 console.log(people[i] + " is refused, ");
-            } else {
+            } else if (i === people.length - 1) {
+                console.log(people[i] + " is admitted.")
+            }
+            else {
                 console.log(people[i] + " is admitted, ");
             }
             i++;
