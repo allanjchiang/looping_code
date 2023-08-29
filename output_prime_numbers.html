@@ -7,18 +7,17 @@
 </head>
 <body>
     <script>
-        let n = prompt("Please enter a number and we will check all the prime numbers leading to that number you chose");
-        let isPrime = true;
-        
-        for (let i = 2; i < n; i++) {
-            if (n === 1 || n === 0) {
-                isPrime = false;
-            } else if(n % i === 0) {
-                isPrime = false;
-            } else if (isPrime = true) {
-            console.log(i);
+            function isPrime(n) {
+                if (n === 0 || n === 1) {
+                    return false;
+                }
+                for (let i = 0; i < n; i++) {
+                    if (n % i === 0) {
+                        return false;
+                    }
+                }
             }
-        }
+                
         
     </script>
 </body>
